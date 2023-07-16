@@ -1,0 +1,46 @@
+//COLOR SECUNDARIO DE LA PAGINA
+
+$rojo :brown;
+//MIXIN
+@mixin stile-titulo ($colore , $texto , $tamano , $fon-we){
+    color : $colore;
+    text-decoration : $texto;
+    font-size : $tamano;
+    font-weight: $fon-we;
+}
+
+
+
+//UTILIZANDO MIXIN
+.titulo{ 
+
+   @include stile-titulo($rojo , none , 50px , bolder) 
+}
+
+.logo {
+
+    float: left;
+}
+
+
+
+li {
+
+    float: right;
+    margin-right: 30px;
+    list-style: none;
+
+}
+
+.text-justify{
+text-align: justify;
+font-size: 18px;
+
+}
+
+
+.a{
+
+    text-decoration: none;
+}
+
